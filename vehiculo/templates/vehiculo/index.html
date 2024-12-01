@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<div id="heroSlider" class="carousel slide w-100" data-bs-ride="carousel" style="height: 700px;">
+    <div class="carousel-inner h-100">
+        <div class="carousel-item active position-relative h-100" style="background-image: url('{% static "assets/img/portada-autos.jpg" %}'); background-size: cover; background-position: center;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+            <div class="position-relative text-center text-white d-flex align-items-center justify-content-center h-100">
+                <div>
+                    <h1 class="display-4 fw-bold">Catálogo de Vehículos</h1>
+                    <p class="lead">Bienvenido a la tienda virtual de vehículos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item position-relative h-100" style="background-image: url('{% static "assets/img/portada-autos2.jpg" %}'); background-size: cover; background-position: center;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+            <div class="position-relative text-center text-white d-flex align-items-center justify-content-center h-100">
+                <div>
+                    <h1 class="display-4 fw-bold">Amplia Gama de Autos</h1>
+                    <p class="lead">Encuentra el auto perfecto para ti.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item position-relative h-100" style="background-image: url('{% static "assets/img/portada-autos3.jpg" %}'); background-size: cover; background-position: center;">
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+            <div class="position-relative text-center text-white d-flex align-items-center justify-content-center h-100">
+                <div>
+                    <h1 class="display-4 fw-bold">Ofertas Exclusivas</h1>
+                    <p class="lead">Aprovecha nuestros precios únicos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+{% endblock %}
